@@ -6,6 +6,7 @@
 
 body {
     height: 100vh;
+    width: 100vw;
     font-family: 'Roboto',Helvetica, sans-serif;
 }
 .header{
@@ -73,8 +74,43 @@ body {
     font-size: 18px;
 }
 
-img {
+.hero-info img {
     width: 400px;
     height: 250px;
     flex-shrink: 0;
+}
+
+/* main */
+.main-info {
+    padding: 48px;
+}
+.main-info h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 48px 0;
+}
+
+
+.icon-content img {
+    width: 110px;
+    height: 110px;
+    border: 3px solid #3882F6;
+    border-radius: 8px;
+    padding: 8px;
+    margin-right: 24px;
+}
+
+.icon-content p {
+    max-width: 110px;
+    padding-bottom: 8px;
+    color: #424345;
+    font-size: 12px;
 }
