@@ -5,22 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Landing Page</title>
 </head>
 <body>
     <!-- header -->
-    <div class="header">
+    <header class="header">
         <!-- logo -->
         <div class="logo">
             Queendom
         </div>
-        <!-- links -->
-        <div class="links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
+        <!-- Hamburger -->
+        <div class="hamburger-container">
+            <button class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <!-- links -->
+            <ul class="links" id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
         </div>
-    </div>
+    </header>
         <!-- hero -->
     <div class="hero-info">
         <div class="info">
@@ -76,6 +83,6 @@
     <footer>
         <p>Copyright © Queendom 2023</p>
     </footer>
-
+    <script src="./js/index.js"></script>
 </body>
 </html>

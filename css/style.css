@@ -18,40 +18,68 @@ p {
 }
 .header{
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
-    padding: 8px 10vw;
+    padding: 24px 10vw;
 }
 
 .header, .hero-info , footer{
     background-color: #1F2937;
 }
 
-.hero-info {
-    width: 100vw;
-}
 
 .logo {
     color: #F9FAF8;
     font-size: 24px;
 } 
 
+.links {
+    display: none;
+    list-style: none;
+    width: fit-content;
+    text-align: center;
+}
+
+.links li {
+    margin-top: 1em;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #424345;
+}
+
 .links a {
     text-decoration: none;
     color: #E5E7EB;
-    margin-left: 8px;
 }
 
+.links a:hover {
+    text-decoration: underline;
+}
+
+.hamburger-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    width: 105px;
+    margin-left: 20%;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+    color: #E5E7EB;
+}
 /* hero */
 .hero-info {
-    display: flex;
-    justify-content: space-between;
-    gap: 48px;
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
     padding: 64px 10vw;
 }
 
 .info {
-    flex: 1;
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -84,7 +112,6 @@ p {
 .hero-info img {
     width: 400px;
     height: 250px;
-    flex-shrink: 0;
     border-radius: 5px;
     box-shadow: rgba(236, 236, 236, 0.607) 0px 5px 15px;
 }
@@ -155,6 +182,7 @@ p {
     justify-content: center;
     align-items: center;
     color: #E5E7EB;;
+    margin: 0 1em;
 }
 
 .action-item {
@@ -184,3 +212,22 @@ footer {
     color: #E5E7EB;
 }
 
+@media (min-width:800px) {
+    .header {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hamburger {
+        display: none;
+    }
+
+    .links {
+        display: flex;
+    }
+
+    .links li {
+        margin-left: 1em;
+        border: none;
+    }
+
+}
